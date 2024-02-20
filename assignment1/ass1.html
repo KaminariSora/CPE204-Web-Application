@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What can JavaScript do?</h2>
+    <p>JavaScript can image HTML attribute values.</p>
+    <p>In this JavaScript changes the value of the src (source) attribute of an image.</p>
+    <button onclick="handleOn()">Turn on the light.</button>
+    <img id="myImage" src="pic_bulbon.gif" style="width: 100px;">
+    <button onclick="handleOff()">Turn off the light.</button>
+
+</body>
+<script>
+    let myImage = document.getElementById('myImage')
+
+    function handleOn() {
+        myImage.src = 'pic_bulbon.gif'
+        console.log("on")
+    }
+
+    function handleOff() {
+        myImage.src = 'pic_bulboff.gif'
+    }
+</script>
+</html>
