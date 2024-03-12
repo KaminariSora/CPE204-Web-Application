@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Slide show</title>
+    <link rel="stylesheet" href="Ex1_SlideShow.CSS">
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./image.png" style="width:100%">
+            <div class="text">If I can stop one from heart breaking</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./Screenshot 2024-02-07 173506.png" style="width:100%">
+            <div class="text">Why do people choose to sleep? I think...</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./Screenshot 2024-02-07 173635.png" style="width:100%">
+            <div class="text">They're afraid to wake up from the dream.</div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <audio autoplay>
+        <source src="./[THAI SUB]  If I Can Stop One Heart From Breaking - Honkai_Star Rail (แปลไทย).mp3" type="audio/mpeg">
+      </audio>
+      
+    <script src="EX2 _AutoSlideShow.js"></script>
+</body>
+
+</html>
